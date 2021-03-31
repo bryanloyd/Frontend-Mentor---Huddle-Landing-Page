@@ -1,0 +1,19 @@
+:root {
+  --color-violet: #684bb1;
+  --color-magenta: #e880e8;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}

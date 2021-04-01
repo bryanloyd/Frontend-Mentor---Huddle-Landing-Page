@@ -24,22 +24,15 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: center;
-  min-width: 375px;
-}
-
-.container {
-  width: 327px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.5;
+  justify-content: flex-start;
+  width: 375px;
 }
 
 .logo {
   width: 100%;
+  margin-top: 30px;
+  margin-bottom: 55px;
+  padding-left: 35px;
 }
 
 .logo__image {
@@ -47,14 +40,20 @@ body {
 }
 
 .image__mockups {
-  width: 327px;
+  width: 310px;
+}
+
+.text {
+  margin-top: 40px;
+  width: 305px;
+  line-height: 1.5;
 }
 
 .text h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
 }
 
 .text p {
@@ -65,19 +64,29 @@ body {
 }
 
 .button {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .button_register {
   font-family: "Poppins", sans-serif;
+  border: 0;
   padding: 15px 85px;
   border-radius: 25px;
   font-weight: 400;
   font-size: 1.3rem;
   background-color: var(--color-white);
   color: var(--color-violet);
-  border-color: var(--color-violet);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button_register:hover,
+.button_register:active {
+  background-color: var(--color-magenta);
+  color: var(--color-white);
+}
+
+.button_register:focus {
+  outline: 0;
 }
 
 .social {
@@ -93,4 +102,10 @@ body {
   width: 30px;
   text-align: center;
   padding-top: 7px;
+}
+
+.fab:active,
+.fab:hover {
+  border-color: var(--color-magenta);
+  color: var(--color-magenta);
 }

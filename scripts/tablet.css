@@ -1,0 +1,22 @@
+body {
+  background-image: url(/images/bg-desktop.svg);
+  background-size: cover;
+  width: 768px;
+  height: 100vh;
+}
+
+.logo {
+  padding-left: 200px;
+}
+
+.logo__image {
+  width: 150px;
+}
+
+.image__mockups {
+  width: 375px;
+}
+
+.text {
+  width: 350px;
+}

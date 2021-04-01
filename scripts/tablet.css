@@ -1,8 +1,10 @@
 body {
   background-image: url(/images/bg-desktop.svg);
   background-size: cover;
+}
+
+.container {
   width: 768px;
-  height: 100vh;
 }
 
 .logo {

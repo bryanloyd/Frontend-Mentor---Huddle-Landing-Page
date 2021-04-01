@@ -1,0 +1,69 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "logo . . . ."
+    "image image image text text"
+    "image image image button ."
+    ". . . . social";
+}
+
+.logo {
+  grid-area: logo;
+  padding-left: 100px;
+}
+
+.logo__image {
+  width: 200px;
+}
+
+.image {
+  grid-area: image;
+  padding-left: 100px;
+}
+
+.image__mockups {
+  width: 750px;
+}
+
+.text {
+  grid-area: text;
+  width: 520px;
+}
+
+.text h2 {
+  text-align: left;
+  font-size: 4rem;
+}
+
+.text p {
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+.button {
+  grid-area: button;
+  margin-top: -130px;
+}
+
+.button_register {
+  font-size: 1.8rem;
+  padding: 20px 60px;
+  border-radius: 35px;
+}
+
+.social {
+  grid-area: social;
+}
+
+.fab {
+  font-size: 2.5rem;
+  margin: 10px;
+  padding: 6px;
+  height: 40px;
+  width: 40px;
+}
